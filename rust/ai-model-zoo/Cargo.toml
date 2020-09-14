@@ -1,8 +1,16 @@
 [package]
-name = "face_detect"
+name = "ai-model-zoo"
 version = "0.1.0"
 authors = ["YiYing He <yiying@secondstate.io>"]
 edition = "2018"
+
+[[bin]]
+name = "face_detect"
+path = "src/face_detect/main.rs"
+
+[[bin]]
+name = "ai_infer"
+path = "src/ai_infer/main.rs"
 
 [dependencies]
 tensorflow = "0.16.0"
